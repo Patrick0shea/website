@@ -1,0 +1,72 @@
+/* 
+ * Shared Stylesheet for Patrick O'Shea's Portfolio
+ * This file contains all the CSS used across the website.
+ * By keeping styles in one place, we follow the DRY principle:
+ * "Don't Repeat Yourself" - makes updates easier!
+ */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main body styling - applies to all pages */
+body {
+    font-family: monospace;
+    font-size: 16px;
+    color: #f0f0f0;
+    background: #111214;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+/* Center content on homepage */
+body.home {
+    align-items: center;
+}
+
+/* Container limits width for readability */
+.container {
+    max-width: 700px;
+}
+
+/* Header section with navigation */
+header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Links - coral color for minimalist accent */
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    border-bottom: 1px solid #ff6f61;
+    /* Smooth transition on hover - this is a CSS transition! */
+    transition: background 0.2s ease;
+}
+
+/* Hover effect - subtle background highlight */
+a:hover {
+    background: rgba(255, 111, 97, 0.2);
+}
+
+/* Paragraph spacing */
+main p {
+    margin-bottom: 40px;
+}
+
+/* List styling for books and projects pages */
+main ul {
+    list-style: disc inside;
+    margin-top: 20px;
+}
+
+main ul li {
+    margin-bottom: 40px;
+}
